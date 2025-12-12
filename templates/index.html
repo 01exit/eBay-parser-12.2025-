@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Parser</title>
+</head>
+<body>
+    <h1>eBay Parser</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter query" required>
+        <select name="limit">
+            {% for i in range(1, 11) %}
+            <option value="{{ i }}">{{ i }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" name="action" value="parse">Parse</button>
+    </form>
+    <form method="POST">
+        <button type="submit" name="action" value="show_db">Show Database</button>
+    </form>
+    <form method="POST">
+        <button type="submit" name="action" value="clear_db">Clear Database</button>
+    </form>
+    {% if products %}
+    <h2>Products</h2>
+    <ul>
+        {% for product in products %}
+        <li>
+            <strong>{{ product.name }}</strong>
+            —${{ product.price }}
+            — <a href="{{ product.url }}" target="_blank">Link</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</body>
+</html>
