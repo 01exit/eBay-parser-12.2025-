@@ -42,12 +42,15 @@ bash
 `git clone https://github.com/01exit/eBay-parser-12.2025-.git cd eBay-parser-12.2025-`
 
 2️⃣ Install dependencies
+
 `pip install -r requirements.txt`
 
 3️⃣ Install Playwright browsers
+
 `playwright install`
 
 ▶️ Usage
+
 `python main.py`
 Open your browser and go to `http://127.0.0.1:5000/`
 You can:
