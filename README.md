@@ -39,11 +39,20 @@ A price scraper for eBay built with **Python + Playwright** to bypass anti-bot p
 
 ### 1️⃣ Clone the repository
 bash 
-`git clone https://github.com/01exit/eBay-parser-12.2025-.git cd eBay-parser-12.2025`-
+`git clone https://github.com/01exit/eBay-parser-12.2025-.git cd eBay-parser-12.2025-`
+
 2️⃣ Install dependencies
 `pip install -r requirements.txt`
+
 3️⃣ Install Playwright browsers
 `playwright install`
+
 ▶️ Usage
 `python main.py`
+Open your browser and go to `http://127.0.0.1:5000/`
+You can:
+  Search products
+  View saved products
+  Clear database
+  Select number of results (1–10)
 
