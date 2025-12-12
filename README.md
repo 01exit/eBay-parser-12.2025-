@@ -55,8 +55,8 @@ bash
 Open your browser and go to `http://127.0.0.1:5000/`
 
 You can:
-  -Search products
-  -View saved products
-  -Clear database
-  -Select number of results (1–10)
+ Search products, 
+ View saved products, 
+ Clear database, 
+ Select number of results (1–10)
 
